@@ -1,33 +1,33 @@
 # Approximation polynomiale et matrices de Hilbert
 
-**Contexte**  
+## Contexte
 Ce projet étudie la résolution de systèmes linéaires faisant intervenir des matrices de Hilbert, connues pour être
 particulièrement mal conditionnées (i.e., très sensibles aux erreurs d’arrondi). Le but était de comparer la stabilité et la précision de deux méthodes classiques :
 - L’élimination de Gauss
 - La factorisation de Cholesky (adaptée aux matrices symétriques définies positives)
 
-**Objectifs**  
+## Objectifs  
 1. Implémenter et comparer ces méthodes en MATLAB  
 2. Étudier l’impact du conditionnement sur la précision numérique  
 3. Visualiser les résidus et erreurs selon la taille du système
 
-**Contenu du dépôt**  
+## Contenu du dépôt 
 - `main.m` : script principal  
 - `gauss.m` : résolution par élimination de Gauss  
 - `cholesky.m` : résolution via Cholesky  
 - `rapport.pdf` : analyse complète des résultats
 
-**Résultats clés**  
+## Résultats clés 
 - Au-delà de `n = 12`, la méthode de Gauss devient instable  
 - Cholesky reste plus robuste sur ce type de matrices  
 - Les erreurs relatives et résidus sont présentés dans `rapport.pdf`
 
-**Utilisation**  
+## Utilisation  
 1. Ouvrir MATLAB  
 2. Exécuter `main.m`  
 3. Lire `rapport.pdf` pour l'interprétation complète
 
-**Ce que j’en ai retenu**  
+## Ce que j’en ai retenu
 - Importance du conditionnement dans les calculs numériques  
 - Limites de certaines méthodes classiques quand les matrices sont pathologiques  
 - Nécessité de choisir la méthode de résolution en fonction de la stabilité numérique
